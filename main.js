@@ -15,3 +15,28 @@ const closeNav = () => {
 };
 
 closeNavBtn.addEventListener('click',closeNav);
+
+
+// Swiper js
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    // responsive breakpoints
+    breakpoints: {
+        // when window with is >= 600px
+        367: {
+            slidesPerView:2
+        },
+
+        // when window with is >= 1024
+        1024: {
+            slidesPerView:3
+        }
+    }
+  });
